@@ -79,7 +79,8 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: rgb(0, 0, 0);</string>
+     <string notr="true">color: rgb(251, 255, 255);
+font: 13pt &quot;8BIT WONDER(RUS BY LYAJKA)&quot;;</string>
     </property>
     <property name="text">
      <string/>
@@ -95,7 +96,9 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: rgb(251, 255, 255);</string>
+     <string notr="true">color: rgb(251, 255, 255);
+font: 13pt &quot;8BIT WONDER(RUS BY LYAJKA)&quot;;
+</string>
     </property>
     <property name="text">
      <string/>

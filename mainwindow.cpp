@@ -63,8 +63,8 @@ void MainWindow::finishReading()
         QString date = userJsonInfo.value("location").toObject().value("localtime").toString();
         ui->dateSlot->setText(date);
 
-        QString temperature = userJsonInfo.value("current").toObject().value("temp_c").toString();
-        ui->temperatureSlot->setText(temperature);
+        double temperature = userJsonInfo.value("current").toObject().value("temp_c").toDouble();
+        ui->temperatureSlot->setText(QString::number(temperature));
 
         dataBuffer.clear();
     }
