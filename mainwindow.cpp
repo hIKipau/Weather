@@ -5,6 +5,8 @@
 #include <QJsonValue>
 #include <QInputDialog>
 #include <QMessageBox>
+#include <QGraphicsView>
+
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -14,7 +16,35 @@ MainWindow::MainWindow(QWidget *parent)
     netManager = new QNetworkAccessManager(this);
     netReply = nullptr;
     repoReply = nullptr;
+
+
+
+//     QMediaPlayer *player = new QMediaPlayer;
+//     QVideoWidget *videoWidget = new QVideoWidget;
+
+//     player->setVideoOutput(videoWidget);
+// player->setSource(QUrl("qrc:/Resources/videos/фон.mp4"));    player->play();
+//     QVBoxLayout *layout = new QVBoxLayout;
+//     layout->addWidget(videoWidget);
+
+//     QWidget *centralWidget = new QWidget(this);
+//     centralWidget->setLayout(layout);
+//     setCentralWidget(centralWidget);
+//     videoWidget->setAspectRatioMode(Qt::KeepAspectRatio);
+//     videoWidget->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
+//     videoWidget->show();
+    QLabel* backgroundLabel = new QLabel(this);
+    QPixmap background(":/Resources/photo/фон.png");
+    backgroundLabel->setPixmap(background.scaled(this->size(), Qt::KeepAspectRatioByExpanding));
+    backgroundLabel->setGeometry(0, 0, this->width(), this->height());  // Устанавливаем размеры QLabel по всему окну
+        backgroundLabel->lower();  // Помещаем QLabel на задний план
+
+
+
 }
+
+
+
 
 MainWindow::~MainWindow()
 {

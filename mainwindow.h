@@ -1,7 +1,6 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
-#include <format>
 #include <QMainWindow>
 #include <QDebug>
 #include <QNetworkAccessManager>
@@ -9,6 +8,9 @@
 #include <QNetworkReply>
 #include <QByteArray>
 #include <QPixmap>
+#include <QMediaPlayer>
+#include <QVideoWidget>
+#include <QVBoxLayout>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
