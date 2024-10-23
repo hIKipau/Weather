@@ -1,12 +1,9 @@
 QT       += core gui
-
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets network
 QT += multimedia multimediawidgets
+QT += sql
 CONFIG += c++17
-CONFIG+=sdk_no_version_check
-# You can make your code fail to compile if it uses deprecated APIs.
-# In order to do so, uncomment the following line.
-#DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
+CONFIG += sdk_no_version_check
 
 SOURCES += \
     main.cpp \
@@ -29,3 +26,12 @@ RESOURCES += \
 DISTFILES += \
     Resources/videos/фон.mp4
 
+# MacOS specific configuration
+macx {
+    LIBS += -L/opt/homebrew/Cellar/libpq/17.0_1/lib -lpq
+    INCLUDEPATH += /opt/homebrew/Cellar/libpq/17.0_1/include
+
+    # Добавляем дополнительные пути поиска библиотек
+    QMAKE_RPATHDIR += /opt/homebrew/lib/postgresql@14
+    QMAKE_RPATHDIR += /opt/homebrew/Cellar/postgresql@14/14.13_2/lib/postgresql@14
+}

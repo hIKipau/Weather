@@ -66,7 +66,7 @@
 color: rgb(255, 105, 85);</string>
        </property>
        <property name="text">
-        <string> </string>
+        <string/>
        </property>
       </widget>
      </item>
@@ -103,8 +103,8 @@ color: rgb(210, 27, 0);</string>
      <rect>
       <x>70</x>
       <y>120</y>
-      <width>421</width>
-      <height>131</height>
+      <width>441</width>
+      <height>101</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -128,6 +128,36 @@ font: 50pt &quot;Molot&quot;;</string>
      <string notr="true">font: 13pt &quot;8BIT WONDER(RUS BY LYAJKA)&quot;;
 color: rgb(155, 158, 158);
 </string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>500</y>
+      <width>121</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="timeSlot">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>230</y>
+      <width>441</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 50pt &quot;Molot&quot;;</string>
     </property>
     <property name="text">
      <string/>
