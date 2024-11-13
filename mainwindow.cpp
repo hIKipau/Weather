@@ -49,11 +49,11 @@ void MainWindow::connectToDatabase() {
     }
 
     QSqlDatabase db = QSqlDatabase::addDatabase("QPSQL", "MainConnection");
-    db.setHostName("ep-dry-snowflake-a8hl04vd.eastus2.azure.neon.tech");
-    db.setDatabaseName("weatherAPP");
-    db.setUserName("weatherAPP_owner");
-    db.setPassword("HSkDYtcx2lb1");
-    db.setPort(5432);
+    db.setHostName("b3kx6uueuipmazx6lbs4-postgresql.services.clever-cloud.com");
+    db.setDatabaseName("b3kx6uueuipmazx6lbs4");
+    db.setUserName("ufyrbpr5pxga8b0eiwhg");
+    db.setPassword("QPu4Hea5Cg2Fs9JICUFa4vjY7IlF78");
+    db.setPort(50013);
 
     // Подробная проверка подключения
     if (!db.open()) {
