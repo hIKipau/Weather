@@ -1,1 +1,1 @@
-# Weathercdcqlfweqaflcmq'alc,
+Простое приложение для погоды на QT(c++);
