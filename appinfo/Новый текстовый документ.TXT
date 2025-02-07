@@ -1,0 +1,3 @@
+https://www.weatherapi.com/login.aspx
+
+https://console.clever-cloud.com/users/me/addons/addon_a83aeba9-0def-49f6-8a10-a6ef8e7202ac
